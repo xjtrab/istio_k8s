@@ -1,0 +1,5 @@
+Azure 
+az login
+az account list --output table
+az account set --subscription "Visual Studio Professional with MSDN"
+az aks get-credentials --resource-group microservice --name MicroserviceAKS

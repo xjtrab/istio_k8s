@@ -1,0 +1,39 @@
+before:
+ - yaml:
+  site:http://www.ruanyifeng.com/blog/2016/07/yaml.html
+ - docker:
+  site:https://yeasy.gitbooks.io/docker_practice/introduction/what.html
+  emtpy docker k8s show
+  compare with VMs
+   - not need GeustOS
+   - light weight
+
+ - dotnet core mvc
+
+k8s:
+ base:
+  - Master #资源的大总管,命令的入口
+  - Node   #集群内除 Master 之外的机器
+  - pod    #运行在Node中的基本单元
+  - label
+  - Replication Controller #定义一个期望的场景
+  - Deployment 
+  - HPA
+  - Service
+  - Volume
+  - Persiitent Volume
+  - Namespace
+  - Annotation
+ 命令
+  -kubectl
+  
+
+  Deployment 
+   - set image 
+   - scale --replicas
+
+
+   troubleshoot Ingress
+
+   kubectl logs -f deploy/addon-http-application-routing-external-dns -n kube-system
+   kubectl logs -f deploy/addon-http-application-routing-nginx-ingress-controller -n kube-system
