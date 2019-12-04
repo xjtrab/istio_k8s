@@ -85,7 +85,7 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  - host: vote.523f92c7115041a7afdc.eastus.aksapp.io
+  - host: k8s.hetasoft.com
     http:
       paths:
       - backend:
